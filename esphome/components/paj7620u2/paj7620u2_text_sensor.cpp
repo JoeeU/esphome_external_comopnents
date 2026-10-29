@@ -283,7 +283,7 @@ void PAJ7620U2Component::update() {
 void PAJ7620U2Component::initialize_device(){
   this->select_bank_0();               // Default operations on BANK0
   for (uint16_t i = 0; i < sizeof(INITIAL_REGISTER_VALUES)/sizeof(INITIAL_REGISTER_VALUES[0]); i++) {
-    this-write_byte(INITIAL_REGISTER_VALUES[i][0], INITIAL_REGISTER_VALUES[i][1]);
+    this->write_byte(INITIAL_REGISTER_VALUES[i][0], INITIAL_REGISTER_VALUES[i][1]);
   }
   this->select_bank_0();               // Default operations on BANK0
 }
