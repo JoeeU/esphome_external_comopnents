@@ -265,7 +265,7 @@ void PAJ7620U2Component::dump_config() {
   }
   LOG_I2C_DEVICE(this);
   LOG_UPDATE_INTERVAL(this);
-  LOG_TEXT_SENSOR("", "Gesture sensor", this)
+  LOG_TEXT_SENSOR("", "Gesture sensor", this);
 }
 
 
